@@ -24,7 +24,7 @@ const orderName = document.querySelector("#orderName")
 const modalCloseModal = document.querySelectorAll(".close-button");
 const modalPutModal = document.querySelector(".put-button");
 const deliStatus = document.querySelector("#delivery")
-
+const deleteId = document.querySelector('#deleteId');
 
 const token = sessionStorage.getItem('loginToken')
 const userId = sessionStorage.getItem('userId')
@@ -43,6 +43,7 @@ function addAllEvents() {
     orderList.addEventListener("click", e=>deleteUpdate(e));
     modalPutModal.addEventListener("click", e => updateData(e))
     modalCloseModal.forEach(button => button.addEventListener("click", closeModal));
+    deleteId.addEventListener("click", membershipDelete)
 }
 
 
@@ -175,3 +176,37 @@ function isLoggedIn()
         window.location.href = "/users/login";
     } 
 }
+
+function membershipDelete() {
+    const modal = `
+        <div class="modal__card">
+        <p>회원탈퇴를 하시겠습니까?<p>
+        <button class="button accept">확인</button>
+        <button class="button cancel">취소</button>
+        </div>
+    `;
+
+const body = document.querySelector('body');
+const add = document.createElement('div');
+add.setAttribute('class', 'modal__layout');
+add.innerHTML = modal;
+body.prepend(add);
+
+document.querySelector('.cancel').addEventListener('click', () => {
+    add.remove();
+});
+
+document.querySelector('.accept').addEventListener('click', async () => {
+    try {
+        await Api.delete(`/users/${userId}`);
+
+        sessionStorage.removeItem('loginToken');
+        sessionStorage.removeItem('userId');
+
+        alert('회원탈퇴가 완료되었습니다.') 
+        window.location.href = '/';
+    } catch (err) {
+        alert(`문제가 발생하였습니다. 확인 후 다시 시도해 주세요: ${err.message}`);
+    }
+})
+};

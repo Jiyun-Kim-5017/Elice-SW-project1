@@ -44,11 +44,30 @@ function addAllElements() {
     userIdhref();
 }
 function addAllEvents() {
-    submitBtn.addEventListener("click", handleSubmit)
-    deleteId.addEventListener("click", membershipDelete)
+    submitBtn.addEventListener("click", handleSubmit);
+    deleteId.addEventListener("click", membershipDelete);
 }
 
-async function membershipDelete() {
+function membershipDelete() {
+    const modal = `
+        <div class="modal__card">
+        <p>회원탈퇴를 하시겠습니까?<p>
+        <button class="button accept">확인</button>
+        <button class="button cancel">취소</button>
+        </div>
+    `;
+
+const body = document.querySelector('body');
+const add = document.createElement('div');
+add.setAttribute('class', 'modal__layout');
+add.innerHTML = modal;
+body.prepend(add);
+
+document.querySelector('.cancel').addEventListener('click', () => {
+    add.remove();
+});
+
+document.querySelector('.accept').addEventListener('click', async () => {
     try {
         await Api.delete(`/users/${userId}`);
 
@@ -60,7 +79,8 @@ async function membershipDelete() {
     } catch (err) {
         alert(`문제가 발생하였습니다. 확인 후 다시 시도해 주세요: ${err.message}`);
     }
-}
+})
+};
 
 async function emailAttach () {
     const userInfo = await Api.get('/users', userId);
