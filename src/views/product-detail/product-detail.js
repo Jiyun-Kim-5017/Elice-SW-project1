@@ -82,7 +82,13 @@ function addToCart() {
 //바로 결제
 function buyNow() {
   const token = sessionStorage.getItem("loginToken");
+  const admin = sessionStorage.getItem("adminToken");
   
+  if (admin) {
+    alert("상품을 구매하시려면 일반 회원 계정으로 로그인해주세요.")
+    return;
+  }
+
   //비회원은 로그인 페이지로, 회원은 장바구니로
   if (!token) {
     alert("로그인 후 이용해 주세요.");
