@@ -2,7 +2,7 @@
 
 <div>
 
-<img alt="쇼핑-데모 로고" src="https://octomaket.s3.ap-northeast-2.amazonaws.com/1668143702910_apple-icon-180x180.png">
+![1668143702910_apple-icon-180x180](https://user-images.githubusercontent.com/113993379/210050801-54a52c9d-473d-490e-b2bd-691cd5614b49.png)
 
 </div>
 
@@ -133,7 +133,8 @@
 ![image](https://i.ibb.co/9tGxmx0/image.png)<br />
 
 ### 3-1. 폴더 구조
-<img src="https://octomaket.s3.ap-northeast-2.amazonaws.com/1668146249377_Screen%20Shot%202022-11-11%20at%202.56.44%20PM.png">
+![1668146249377_Screen Shot 2022-11-11 at 2 56 44 PM](https://user-images.githubusercontent.com/113993379/210050905-8021f882-5267-461f-9c87-e9c2eef75920.png)
+
 <br />
 
 ## 4. 제작자
