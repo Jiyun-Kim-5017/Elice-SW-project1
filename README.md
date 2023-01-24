@@ -1,10 +1,5 @@
 # 문어상점 🐙
 
-<div>
-
-<img alt="쇼핑-데모 로고" src="https://octomaket.s3.ap-northeast-2.amazonaws.com/1668143702910_apple-icon-180x180.png">
-
-</div>
 
 <br />
 
@@ -21,65 +16,10 @@
 
 <br />
 
-### 1-1. API 문서
+## 1. API 문서
 
 ### https://www.notion.so/API-dc9ada61dcce462bb76ac3c7678b132d
 
-<br>
-
-### 1-2. 페이지 별 화면
-
-<details><summary>사용자 회원가입</summary>
-
-![image](https://user-images.githubusercontent.com/91174156/172159634-1e105633-9948-464e-a540-5429200a1353.gif)
-
-</details>
-
-<details><summary>로그인</summary>
-
-![image](https://user-images.githubusercontent.com/91174156/172159634-1e105633-9948-464e-a540-5429200a1353.gif)
-
-</details>
-
-<details><summary>카테고리 CRUD</summary>
-
-추후 관련 영상을 삽입하세요 (하기 2가지 방법 가능)
-1. 화면녹화 -> 유튜브 업로드 -> 유튜브 링크 삽입  
-2. 화면움짤녹화 -> 움짤삽입 (https://www.screentogif.com/ 활용가능)
-   
-</details>
-
-<details><summary>제품 CRUD</summary>
-
-추후 관련 영상을 삽입하세요 (하기 2가지 방법 가능)
-1. 화면녹화 -> 유튜브 업로드 -> 유튜브 링크 삽입  
-2. 화면움짤녹화 -> 움짤삽입 (https://www.screentogif.com/ 활용가능)
-
-</details>
-
-<details><summary>장바구니 기능</summary>
-
-추후 관련 영상을 삽입하세요 (하기 2가지 방법 가능)
-1. 화면녹화 -> 유튜브 업로드 -> 유튜브 링크 삽입  
-2. 화면움짤녹화 -> 움짤삽입 (https://www.screentogif.com/ 활용가능)
-
-</details>
-
-<details><summary>주문 기능</summary>
-
-추후 관련 영상을 삽입하세요 (하기 2가지 방법 가능)
-1. 화면녹화 -> 유튜브 업로드 -> 유튜브 링크 삽입  
-2. 화면움짤녹화 -> 움짤삽입 (https://www.screentogif.com/ 활용가능)
-
-</details>
-
-<details><summary>관리자 페이지</summary>
-
-추후 관련 영상을 삽입하세요 (하기 2가지 방법 가능)
-1. 화면녹화 -> 유튜브 업로드 -> 유튜브 링크 삽입  
-2. 화면움짤녹화 -> 움짤삽입 (https://www.screentogif.com/ 활용가능)
-
-</details>
 
 <br />
 
@@ -127,14 +67,15 @@
 - AWS S3 Bucket을 이용한 상품 이미지 관리
 - Joi Library를 이용한 Validation
 - Nodemailer Library를 이용한 Mailing Service
+<br />
 
 ## 3. 인프라 구조
 
 ![image](https://i.ibb.co/9tGxmx0/image.png)<br />
 
 ### 3-1. 폴더 구조
-<img src="https://octomaket.s3.ap-northeast-2.amazonaws.com/1668146249377_Screen%20Shot%202022-11-11%20at%202.56.44%20PM.png">
-<br />
+<img src='https://user-images.githubusercontent.com/113993379/214252746-be2bc559-e1f2-4c13-9741-99e937781eb4.png' height='500px'/>
+<br /><br />
 
 ## 4. 제작자
 
